@@ -44,7 +44,7 @@ If you are getting a "Validation failed for a resource" error, pick a different 
 After creation:
 
 Settings -> Environment variables - Add the following variables (sample values are included, replace them with your values):
-BLOB_ACCOUNT: image11
+BLOB_ACCOUNT: images11
 BLOB_CONTAINER: images
 BLOB_STORAGE_KEY: s4oh+l0lJfe+oTMpA16rcp89oS6yP/US9bUpjipea+sEsHW1xz+AU4NerX16dq9CWZKlsm1IniHr+AStIgwqig==
 SQL_SERVER: cms1234.database.windows.net
