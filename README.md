@@ -22,7 +22,8 @@ Advanced - Access tier: Cool
 Network access: Enable public access from all networks (the default)
 Create container named "images". Set its access level to Container.
 From Security + networking > Access keys:
-Blob Storage key: dErmMz8g/4xXtqsZZgVQnR5PvEn2uFwEYbclh3igfTFC4Ipd138UH/PLItHyunYUXPA88mIWzUoW+AStcZpWFA==
+Blob Storage key: TDd3gvZUzDPJWGdVa0/4XlYEmJJZRo3CRlGaYuClefrRynuXEA+nKURjZ8U12ClyO3VWbFUpRXUN+AStxPEXTg==
+
 
 6. Microsoft Entra ID
 4.1. App Registration
@@ -30,9 +31,9 @@ Name: cmsEntraID
 Who can use? "Accounts in any organizational directory (Any Microsoft Entra ID tenant - Multitenant) and personal Microsoft accounts (e.g. Skype, Xbox)"
 4.2. Secret Creation
 Secret description: test
-Secret Key: a4863c18-2cb2-4941-891c-8ab616d43ac5
-Client Secret: fsC8Q~dvRc1EIxDEiME-HhO9POSdkZd0Ee-ngdp5
-Application (client) ID: f9995551-230c-4a7a-921e-7cc74aad5873
+Secret Key: 9b9d01bc-a32f-41e9-907b-8dacbd11271b
+Client Secret: q2D8Q~UKv6iatwLwzHnqYVLK4-m9aAMJJMUfNbcW
+Application (client) ID: 3c688fe2-aa6e-482c-a8ea-cb1792d4d735
 
 8. Application
 Pick either of the following two options for setting up your application. Once you have set up the application successfully, you may begin to work on the OAuth2 login feature.
@@ -46,14 +47,14 @@ After creation:
 Settings -> Environment variables - Add the following variables (sample values are included, replace them with your values):
 BLOB_ACCOUNT: images11
 BLOB_CONTAINER: images
-BLOB_STORAGE_KEY: dErmMz8g/4xXtqsZZgVQnR5PvEn2uFwEYbclh3igfTFC4Ipd138UH/PLItHyunYUXPA88mIWzUoW+AStcZpWFA==
+BLOB_STORAGE_KEY: TDd3gvZUzDPJWGdVa0/4XlYEmJJZRo3CRlGaYuClefrRynuXEA+nKURjZ8U12ClyO3VWbFUpRXUN+AStxPEXTg==
 SQL_SERVER: cms1234.database.windows.net
 SQL_DATABASE: cms
 SQL_USER_NAME: cmsadmin
 SQL_PASSWORD: CMS4dmin
-CLIENT_SECRET: fsC8Q~dvRc1EIxDEiME-HhO9POSdkZd0Ee-ngdp5
-SECRET_KEY: a4863c18-2cb2-4941-891c-8ab616d43ac5
-CLIENT_ID: f9995551-230c-4a7a-921e-7cc74aad5873
+CLIENT_SECRET: q2D8Q~UKv6iatwLwzHnqYVLK4-m9aAMJJMUfNbcW
+SECRET_KEY: 9b9d01bc-a32f-41e9-907b-8dacbd11271b
+CLIENT_ID: 3c688fe2-aa6e-482c-a8ea-cb1792d4d735
 Deployment Center
 Source: GitHub
 Pick the repo that contains the starter files.
