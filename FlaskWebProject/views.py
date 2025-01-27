@@ -73,7 +73,7 @@ def login():
         next_page = request.args.get('next')
         if not next_page or url_parse(next_page).netloc != '':
             next_page = url_for('home')
-            app.logger.warning("{} logged successfully."format(form.username.data))
+            app.logger.warning("{} logged successfully.".format(form.username.data))
         return redirect(next_page)
     session["state"] = str(uuid.uuid4())
     auth_url = _build_auth_url(scopes=Config.SCOPE, state=session["state"])
@@ -90,10 +90,9 @@ def authorized():
         cache = _load_cache()
         # TODO: Acquire a token from a built msal app, along with the appropriate redirect URI
         result = _build_msal_app(cache=cache).acquire_token_by_authorization_code(
-        request.args.get('code'),
-        scopes=Config.SCOPE,
-        redirect_uri=url_for('authorized', _external=True, _scheme='https'))
-
+            request.args.get('code'),
+            scopes=Config.SCOPE,
+            redirect_uri=url_for('authorized', _external=True, _scheme='https'))
         if "error" in result:
             app.logger.warning("Invalid login attempt. Code returned")
             return render_template("auth_error.html", result=result)
