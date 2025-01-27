@@ -12,7 +12,7 @@
 - Web apps are cheaper in cost.
 
 - Based on the facts above, I went with the Web application since I am a beginner at deploying Azure applications and the ease and cheaper cost of the Web apps convinced me to follow this approach.
-- 
+  
 ### Assess app changes that would change your decision.
 
 *Detail how the app and any other needs would have to change for you to change your decision in the last section.* 
